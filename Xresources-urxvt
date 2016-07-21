@@ -1,23 +1,26 @@
 !COMMENTS
 
 URxvt*font: xft:Monospace :size=10
-URxvt*termName: rxvt
-URxvt*imlocale: it_IT-UTF-8
+
+!set your locale
+ !URxvt*imlocale: it_IT-UTF-8
+
+!set your browser
+ !URxvt.url-select.launcher: chromium
 
 URxvt*background: #DCDCCC
-!rgba:0000/0000/0000/3f3f3f:
 
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
-URxvt.url-select.launcher: chromium
 URxvt.url-select.underline: true
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 
-
-URxvt*reverseVideo: true
 !URxvt*foreground: #dcdccc
-URxvt*scrollBar: false
+
+!invert color (es. selection)
+URxvt*reverseVideo: true
+
 URxvt*perl-lib: /usr/lib/URxvt/perl/
 URxvt*perl-ext-common: default,matcher
 URxvt*urlLauncher: /usr/bin/jumanji
@@ -25,6 +28,7 @@ URxvt*matcher.button: 1
 URxvt.cursorColor: #60b48a
 URxvt.pointerColor: #60b48a
 
+!palette
 URxvt*color0: #3f3f3f
 URxvt*color1: #705050
 URxvt*color2: #60b48a
@@ -48,23 +52,23 @@ Xft*antialias: true
 Xft*hinting: slight
 Xft.rgba: rgb
 Xft.hintstyle: hintslight
-!Xft.autohint: false
 Xft.lcdfilter: lcddefault
 
+!keep disable for real trasparency
 !URxvt.inheritPixmap: true
+!URxvt.tintColor: #3f3f3f
+
+!enable trasparency
 URxvt.transparent: true
 
-!#000 #3f3f3f
-
-!URxvt.tintColor: #3f3f3f
+!set shadow
 URxvt.shading: 80
 
 !hover
 !URxvt*fadeColor: rgb:63/63/63
 !URxvt*fading: 150
 
-! other settings
-!URxvt.geometry: 90x25+180+200
-URxvt.scrollBar:False
-URxvt.saveLines:3000
-URxvt.preeditType:Root
+!URxvt*geometry: 90x25+180+200
+URxvt*scrollBar: false
+URxvt*saveLines: 3000
+URxvt*preeditType: Root

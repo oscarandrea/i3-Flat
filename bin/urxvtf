@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#i have problem with my locale
-
-source /etc/locale.conf 
-urxvt -imlocale it_IT-UTF-8
-
