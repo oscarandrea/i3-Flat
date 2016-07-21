@@ -1,0 +1,117 @@
+<html><head>
+<title>README.md</title>
+<meta name="Generator" content="htmlizer/[twisted, version 16.3.0]" />
+<link rel="alternate" href="README.md" type="text/x-python" />
+
+</head>
+<body>
+<pre><span class="py-src-comment"># i3-Flat</span>
+
+<span class="py-src-variable">INCOMPLETE</span><span class="py-src-errortoken"> </span><span class="py-src-errortoken">!</span><span class="py-src-errortoken">!</span><span class="py-src-errortoken">!</span>
+
+<span class="py-src-variable">beautiful</span> <span class="py-src-keyword">and</span> <span class="py-src-variable">minimal</span> <span class="py-src-variable">ambiance</span> <span class="py-src-keyword">for</span> <span class="py-src-variable">i3</span>
+
+<span class="py-src-comment">## Installation </span>
+
+<span class="py-src-variable">i3</span>-<span class="py-src-variable">Flat</span> <span class="py-src-variable">require</span> <span class="py-src-variable">following</span> <span class="py-src-variable">dependecies</span>:
+
+[<span class="py-src-variable">i3</span>-<span class="py-src-variable">gaps</span>] (<span class="py-src-variable">https</span>://<span class="py-src-variable">github</span>.<span class="py-src-variable">com</span>/<span class="py-src-variable">Airblader</span>/<span class="py-src-variable">i3</span>)
+[<span class="py-src-variable">i3status</span>] (<span class="py-src-variable">https</span>://<span class="py-src-variable">github</span>.<span class="py-src-variable">com</span>/<span class="py-src-variable">i3</span>/<span class="py-src-variable">i3status</span>)
+[<span class="py-src-variable">conky</span>] (<span class="py-src-variable">https</span>://<span class="py-src-variable">github</span>.<span class="py-src-variable">com</span>/<span class="py-src-variable">brndnmtthws</span>/<span class="py-src-variable">conky</span>)
+[<span class="py-src-variable">rxvt</span>-<span class="py-src-variable">unicode</span>] (<span class="py-src-variable">urxvt</span>) (<span class="py-src-variable">http</span>://<span class="py-src-variable">dist</span>.<span class="py-src-variable">schmorp</span>.<span class="py-src-variable">de</span>/<span class="py-src-variable">rxvt</span>-<span class="py-src-variable">unicode</span>)
+[<span class="py-src-variable">urxvt</span>-<span class="py-src-variable">pearls</span>] (<span class="py-src-variable">http</span>://<span class="py-src-variable">www</span>.<span class="py-src-variable">github</span>.<span class="py-src-variable">com</span>/<span class="py-src-variable">muennich</span>/<span class="py-src-variable">urxvt</span>-<span class="py-src-variable">perls</span>)
+[<span class="py-src-variable">compton</span>] (<span class="py-src-variable">https</span>://<span class="py-src-variable">github</span>.<span class="py-src-variable">com</span>/<span class="py-src-variable">chjj</span>/<span class="py-src-variable">compton</span>)
+[<span class="py-src-variable">feh</span>] (<span class="py-src-variable">http</span>://<span class="py-src-variable">feh</span>.<span class="py-src-variable">finalrewind</span>.<span class="py-src-variable">org</span>)
+
+
+<span class="py-src-comment">#optional dependency are</span>
+[<span class="py-src-variable">vim</span>] (<span class="py-src-variable">https</span>://<span class="py-src-variable">github</span>.<span class="py-src-variable">com</span>/<span class="py-src-variable">vim</span>/<span class="py-src-variable">vim</span>)
+[<span class="py-src-variable">amix</span>/<span class="py-src-variable">vimrc</span>] (<span class="py-src-variable">https</span>://<span class="py-src-variable">github</span>.<span class="py-src-variable">com</span>/<span class="py-src-variable">amix</span>/<span class="py-src-variable">vimrc</span>)
+
+[<span class="py-src-variable">nano</span>] (<span class="py-src-variable">https</span>://<span class="py-src-variable">www</span>.<span class="py-src-variable">nano</span>-<span class="py-src-variable">editor</span>.<span class="py-src-variable">org</span>/<span class="py-src-variable">download</span>.<span class="py-src-variable">php</span>)
+[<span class="py-src-variable">figlet</span>] (<span class="py-src-variable">http</span>://<span class="py-src-variable">www</span>.<span class="py-src-variable">figlet</span>.<span class="py-src-variable">org</span>/)
+
+
+
+<span class="py-src-comment">##Bar</span>
+<span class="py-src-variable">Add</span> <span class="py-src-variable">following</span> <span class="py-src-variable">line</span> 
+
+<span class="py-src-variable">ibar</span> {
+    <span class="py-src-comment">#launch json wrapper more info on: https://i3wm.org/docs/user-contributed/conky-i3bar.html</span>
+    <span class="py-src-variable">status_command</span><span class="py-src-errortoken"> </span><span class="py-src-errortoken">$</span><span class="py-src-variable">HOME</span>/<span class="py-src-variable">conky</span>-<span class="py-src-variable">wrapper</span>-<span class="py-src-variable">i3</span>
+ <span class="py-src-variable">position</span> <span class="py-src-variable">top</span>
+
+  <span class="py-src-variable">colors</span> {
+    <span class="py-src-variable">separator</span> <span class="py-src-comment">#268bd2</span>
+    <span class="py-src-variable">background</span> <span class="py-src-comment">#1C1C1C</span>
+    <span class="py-src-variable">statusline</span> <span class="py-src-comment">#839496</span>
+    <span class="py-src-variable">focused_workspace</span> <span class="py-src-comment">#87D7FF #1C1C1C #87D7FF</span>
+    <span class="py-src-variable">active_workspace</span> <span class="py-src-comment">#fdf6e3 #1C1C1C #fdf6e3</span>
+    <span class="py-src-variable">inactive_workspace</span> <span class="py-src-comment">#D7D787 #1C1C1C #D7D787 </span>
+    <span class="py-src-variable">urgent_workspace</span> <span class="py-src-comment">#d33682 #d33682 #fdf6e3</span>
+  }
+}
+
+<span class="py-src-variable">client</span>.<span class="py-src-variable">focused</span> <span class="py-src-comment">#1C1C1C #1C1C1C #60B48A #1C1C1C </span>
+<span class="py-src-variable">client</span>.<span class="py-src-variable">focused_inactive</span> <span class="py-src-comment">#1C1C1C #1C1C1C #eee8d5 #1C1C1C</span>
+<span class="py-src-variable">client</span>.<span class="py-src-variable">unfocused</span> <span class="py-src-comment">#1C1C1C #1C1C1C #93a1a1 #1C1C1C</span>
+<span class="py-src-variable">client</span>.<span class="py-src-variable">urgent</span> <span class="py-src-comment">#d33682 #d33682 #fdf6e3 #dc322f</span>
+
+<span class="py-src-comment">#palette</span>
+<span class="py-src-comment">#backgroud  cyan    green</span>
+<span class="py-src-comment">#1C1C1C   #D7D787  #87D7FF</span>
+
+<span class="py-src-comment">#internal gaps border</span>
+<span class="py-src-variable">gaps</span> <span class="py-src-variable">inner</span> <span class="py-src-number">10</span>
+
+<span class="py-src-comment">#external gaps border</span>
+<span class="py-src-variable">gaps</span> <span class="py-src-variable">outer</span> <span class="py-src-number">15</span>
+
+<span class="py-src-comment">#border propriety for new windows</span>
+<span class="py-src-variable">new_window</span> <span class="py-src-variable">pixel</span> <span class="py-src-number">3</span>
+
+<span class="py-src-comment">#default fonts for windows and bar (if you don't override in .conkyrc)</span>
+<span class="py-src-variable">font</span> <span class="py-src-variable">pango</span>:<span class="py-src-variable">Monospace</span> <span class="py-src-number">10.5</span>
+
+<span class="py-src-comment">#disable border for urxvt windows </span>
+<span class="py-src-variable">for_window</span> [<span class="py-src-variable">instance</span>=<span class="py-src-variable">urxvt</span>] <span class="py-src-variable">border</span> <span class="py-src-variable">none</span>
+
+<span class="py-src-comment">#script for launch urxvt in i3 with support utf-8</span>
+<span class="py-src-variable">bindsym</span><span class="py-src-errortoken"> </span><span class="py-src-errortoken">$</span><span class="py-src-variable">mod</span>+<span class="py-src-variable">Return</span> <span class="py-src-keyword">exec</span> <span class="py-src-variable">urxvtf</span>
+
+
+<span class="py-src-comment">#i prefer use xinitrc</span>
+<span class="py-src-comment">####################################</span>
+<span class="py-src-comment">#compositor</span>
+<span class="py-src-variable">compton</span> -<span class="py-src-variable">b</span>
+
+<span class="py-src-comment">#load config</span>
+<span class="py-src-variable">xrdb</span> -<span class="py-src-variable">merge</span><span class="py-src-errortoken"> </span><span class="py-src-errortoken">$</span><span class="py-src-variable">HOME</span>/<span class="py-src-variable">Xresources</span>-<span class="py-src-variable">urxvt</span>
+
+<span class="py-src-comment">#set your wallpaper</span>
+<span class="py-src-variable">feh</span> --<span class="py-src-variable">bg</span>-<span class="py-src-variable">fill</span><span class="py-src-errortoken"> </span><span class="py-src-errortoken">$</span><span class="py-src-variable">HOME</span>/<span class="py-src-variable">Immagini</span>/<span class="py-src-variable">flat03</span>.<span class="py-src-variable">jpg</span>
+
+<span class="py-src-comment">#setting keyboard </span>
+<span class="py-src-variable">setxkbmap</span> <span class="py-src-variable">it</span>
+
+<span class="py-src-comment">#launch wm</span>
+<span class="py-src-variable">i3</span>
+<span class="py-src-comment">####################################</span>
+
+<span class="py-src-comment">## API Reference</span>
+
+<span class="py-src-variable">Depending</span> <span class="py-src-variable">on</span> <span class="py-src-variable">the</span> <span class="py-src-variable">size</span> <span class="py-src-variable">of</span> <span class="py-src-variable">the</span> <span class="py-src-variable">project</span>, <span class="py-src-keyword">if</span> <span class="py-src-variable">it</span> <span class="py-src-keyword">is</span> <span class="py-src-variable">small</span> <span class="py-src-keyword">and</span> <span class="py-src-variable">simple</span> <span class="py-src-variable">enough</span> <span class="py-src-variable">the</span> <span class="py-src-variable">reference</span> <span class="py-src-variable">docs</span> <span class="py-src-variable">can</span> <span class="py-src-variable">be</span> <span class="py-src-variable">added</span> <span class="py-src-variable">to</span> <span class="py-src-variable">the</span> <span class="py-src-variable">README</span>. <span class="py-src-variable">For</span> <span class="py-src-variable">medium</span> <span class="py-src-variable">size</span> <span class="py-src-variable">to</span> <span class="py-src-variable">larger</span> <span class="py-src-variable">projects</span> <span class="py-src-variable">it</span> <span class="py-src-keyword">is</span> <span class="py-src-variable">important</span> <span class="py-src-variable">to</span> <span class="py-src-variable">at</span> <span class="py-src-variable">least</span> <span class="py-src-variable">provide</span> <span class="py-src-variable">a</span> <span class="py-src-variable">link</span> <span class="py-src-variable">to</span> <span class="py-src-variable">where</span> <span class="py-src-variable">the</span> <span class="py-src-variable">API</span> <span class="py-src-variable">reference</span> <span class="py-src-variable">docs</span> <span class="py-src-variable">live</span>.
+
+<span class="py-src-comment">## Tests</span>
+
+<span class="py-src-variable">Describe</span> <span class="py-src-keyword">and</span> <span class="py-src-variable">show</span> <span class="py-src-variable">how</span> <span class="py-src-variable">to</span> <span class="py-src-variable">run</span> <span class="py-src-variable">the</span> <span class="py-src-variable">tests</span> <span class="py-src-keyword">with</span> <span class="py-src-variable">code</span> <span class="py-src-variable">examples</span>.
+
+<span class="py-src-comment">## Contributors</span>
+
+<span class="py-src-variable">Let</span> <span class="py-src-variable">people</span> <span class="py-src-variable">know</span> <span class="py-src-variable">how</span> <span class="py-src-variable">they</span> <span class="py-src-variable">can</span> <span class="py-src-variable">dive</span> <span class="py-src-variable">into</span> <span class="py-src-variable">the</span> <span class="py-src-variable">project</span>, <span class="py-src-variable">include</span> <span class="py-src-variable">important</span> <span class="py-src-variable">links</span> <span class="py-src-variable">to</span> <span class="py-src-variable">things</span> <span class="py-src-variable">like</span> <span class="py-src-variable">issue</span> <span class="py-src-variable">trackers</span>, <span class="py-src-variable">irc</span>, <span class="py-src-variable">twitter</span> <span class="py-src-variable">accounts</span> <span class="py-src-keyword">if</span> <span class="py-src-variable">applicable</span>.
+
+<span class="py-src-comment">## License</span>
+
+<span class="py-src-variable">A</span> <span class="py-src-variable">short</span> <span class="py-src-variable">snippet</span> <span class="py-src-variable">describing</span> <span class="py-src-variable">the</span> <span class="py-src-variable">license</span> (<span class="py-src-variable">MIT</span>, <span class="py-src-variable">Apache</span>, <span class="py-src-variable">etc</span>.)
+</pre>
+</body>
