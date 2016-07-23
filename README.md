@@ -23,6 +23,19 @@ alternatively you can install [xfce4-terminal] (#xfce4-terminal)
 yaourt -S i3-gaps
 pacman -S feh urxvt-perls rxvt-unicode conky compton i3status
 ```
+##GENTOO
+```
+
+[It requires GIT]
+
+git clone https://www.github.com/Airblader/i3 i3-gaps 
+cd i3-gaps
+git checkout gaps && git pull
+sudo make && make install 
+
+emerge media-gfx/feh x11-misc/urxvt-perls x11-terms/rxvt-unicode 
+app-admin/conky x11-misc/compton x11-misc/i3status
+```
 
 ##Optional dependencies
 
