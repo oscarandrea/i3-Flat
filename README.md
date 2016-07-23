@@ -1,7 +1,5 @@
 # **i3-Flat**
 
-*INCOMPLETE !!!*
-
 A beautiful and minimal ambiance
 
 [![i3-Flat screenshot](img/min/minscr1.png)] (https://raw.githubusercontent.com/Manu-sh/i3-Flat/master/img/screenshot/scr1.png)
@@ -145,7 +143,7 @@ feh --bg-fill $HOME/.config/i3/wallpaper/flat01.jpg
 #launch wm
 i3
 ```
-##finalize ambiance configuration
+#Finalize ambiance configuration
 ```
 cp -v conkyrc-i3 conky-wrapper-i3 Xresources-urxvt ~/.config/i3
 cp -v nanorc ~/.nanorc
