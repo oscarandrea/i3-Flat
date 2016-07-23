@@ -15,7 +15,7 @@ A beautiful and minimal ambiance
 * [compton](https://github.com/chjj/compton) 
 * [feh](http://feh.finalrewind.org)
 
-alternatively you can use [xfce4-terminal] (#xfce4-terminal)
+alternatively you can install [xfce4-terminal] (#xfce4-terminal)
 
 ##Arch Linux
 
